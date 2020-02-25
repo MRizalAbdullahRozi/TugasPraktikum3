@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Konversi</title>
+</head>
+<script language="javascript">
+		function test () {
+
+		var val1=document.hitung.T1.value
+		if (val1>=0&&40)
+			document.hitung.T2.value="E"
+		if (val1>=41&&55)
+			document.hitung.T2.value="D"
+		if (val1>=56&&60)
+			document.hitung.T2.value="C"
+		if (val1>=61&&65)
+			document.hitung.T2.value="BC"
+		if (val1>=66&&70)
+			document.hitung.T2.value="B"
+		if (val1>=71&&80)
+			document.hitung.T2.value="AB"
+		if (val1>=81&&101)
+			document.hitung.T2.value="A"
+		if (val1>=101)
+			document.hitung.T2.value="Angka salah"
+
+		}
+	</script>
+	
+<center><body>
+	<form method="POST" name="hitung">
+		<p>angka (0-100) <input type="text" name="T1" size="20"> huruf <input type="text" name="T2" size="10" disabled="true"></p>
+		<p><input type="button" value="hasil" name="B1" onclick="test()"></p>
+	</form>
+</center></body>
+</html>

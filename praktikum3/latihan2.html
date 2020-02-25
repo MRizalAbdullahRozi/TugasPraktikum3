@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kalkulator Sedeerhana</title>
+</head>
+<br>
+  <center><script language="javascript"> 
+    document.write("Dimodifikasi pada  "  +  document.lastModified);
+    function tambah() {
+      var val1 = Number(document.Hasil.T1.value)
+      var val2 = Number(document.Hasil.T2.value)
+      document.Hasil.T3.value = (val1 + val2)
+    }
+
+    function kurang() {
+      var val1 = document.Hasil.T1.value
+      var val2 = document.Hasil.T2.value
+      document.Hasil.T3.value = (val1 - val2)
+    }
+
+    function bagi() {
+      var val1 = document.Hasil.T1.value
+      var val2 = document.Hasil.T2.value
+      document.Hasil.T3.value = (val1 / val2)
+    }
+
+    function kali () {
+      var val1 = document.Hasil.T1.value
+      var val2 = document.Hasil.T2.value
+      document.Hasil.T3.value = (val1 * val2)
+    }
+
+    function hapus() {
+      document.Hasil.T3.value = " "
+      document.Hasil.T1.value = " "
+      document.Hasil.T2.value = " "
+    }
+
+  </script></center>
+  <br>
+<body >
+  <center><h1>Kalkulator Sederhana</h1></center>
+  <link rel="stylesheet" type="text/css" href="lthn2.css">
+  <center><table>
+    <tr>
+      <td>
+    <center><div class="table"><form method="POST" name="Hasil">
+        <br>
+         BIL 1 <input type="Number" name="T1" size="10" >
+         <br><br>
+         BIL 2 <input type="Number" name="T2" size="10" >
+        <br><br>  
+        <div class="button"><input type="button" name="b1" value="tambah" onclick="tambah()">
+        <input type="button" name="b2" value="kurang" onclick="kurang()">
+        <input type="button" name="b3" value="bagi" onclick="bagi()">
+        <input type="button" name="b4" value="kali" onclick="kali()">
+        <br><br>
+        Hasil <input name="T3" size="15" disabled="true">
+        <input type="button" name="b5" value="hapus" onclick="hapus()">
+      </td>
+    </tr>
+    </center></div></form>
+  </center></table>
+</body>
+</html>
